@@ -12,7 +12,7 @@ public class CaluclateLeap {
             if (row_num > 0) {
                 Integer[] year = new Integer[row_num];
                 for (int i = 0; i < row_num; i++) {
-                    String str = new String(sc.next());
+                    String str = sc.next();
                     if(str.chars().allMatch(Character::isDigit)) {
                         Integer num = Integer.valueOf(str);
                         if (chk0(num) > 0) year[i] = num;
@@ -36,8 +36,7 @@ public class CaluclateLeap {
     private static boolean chkLeap(int i) {
         if ((i % 400) == 0) return true;
         else if ((i % 100) == 0) return false;
-        else if ((i % 4) == 0) return true;
-        else return false;
+        else return (i % 4) == 0;
     }
 
     private static Integer chk0(Integer i) {
