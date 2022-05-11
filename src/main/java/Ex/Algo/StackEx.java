@@ -56,6 +56,18 @@ public class StackEx {
         System.out.println(s.pop());
         System.out.println(s.isEmpty());
 
+        System.out.println(">>>>>>> java stack <<<<<<<<");
+        java.util.Stack<Integer> stack2 = new java.util.Stack<>();
+        stack2.push(11);
+        stack2.push(12);
+        stack2.push(13);
+        System.out.println(stack2.pop());
+        System.out.println(stack2.pop());
+        System.out.println(stack2.peek());
+        System.out.println(stack2.isEmpty());
+        System.out.println(stack2.pop());
+        System.out.println(stack2.isEmpty());
+
     }
 
 }
