@@ -1,6 +1,6 @@
 package Ex.Abstract;
 
-public class Rectangle extends Shape{
+public class Rectangle extends Shape implements Plane2D{
     private final int width;
     private final int height;
 
@@ -22,5 +22,9 @@ public class Rectangle extends Shape{
             System.out.println();
         }
 
+    }
+    @Override
+    public int getArea() {
+        return width*height;
     }
 }
